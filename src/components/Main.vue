@@ -28,6 +28,7 @@ import axios from'axios'
    
     <ul class="container album-cards">
         <li v-for="card in cards" :key="card.id">
+            <img :src="card.card_images[0].image_url" alt="">
             <p>{{card.name}}</p>
             <p>{{card.archetype}}</p>  
         </li>
