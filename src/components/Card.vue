@@ -10,14 +10,14 @@
 </script>
 
 <template>
-  <div class="card">
+  <li class="card">
     <img :src="card.card_images[0].image_url" alt="">
 
     <div class="card-descrition">
         <h3 class="name">{{card.name}}</h3>
         <p class="archetype">{{card.archetype}}</p>  
     </div>
-  </div>
+  </li>
 </template>
 
 <style lang="scss" scoped>
