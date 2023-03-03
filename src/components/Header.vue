@@ -24,6 +24,7 @@
   .header__title{
     text-align: center;
     font-size: 24px;
+    padding: 15px;
     background-color: $bg-color;
     color: $text-color;
   }
