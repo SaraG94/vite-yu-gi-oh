@@ -26,7 +26,7 @@ import axios from'axios'
 
 <template>
    
-    <ul>
+    <ul class="container album-cards">
         <li v-for="card in cards" :key="card.id">
             <p>{{card.name}}</p>
             <p>{{card.archetype}}</p>  
@@ -35,5 +35,22 @@ import axios from'axios'
 </template>
 
 <style lang="scss" scoped>
+    .album-cards{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap:20px;
+        text-align: center;
+        padding: 30px 0;
+
+
+        li{
+            /**debug**/
+            border: 1px solid black;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
 
 </style>

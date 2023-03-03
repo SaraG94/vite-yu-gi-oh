@@ -10,8 +10,8 @@
 
 <template>
 
-  <header>
-    <div class="container header__title">
+  <header class="header__title">
+    <div class="container ">
       <h1>{{ title }}</h1>
     </div>
   </header>
