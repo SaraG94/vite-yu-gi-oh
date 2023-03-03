@@ -46,6 +46,7 @@
         .card-el{
             background-color: $bg-color;
             padding-bottom: 5px;
+            box-shadow: 6px 6px 5px #492d2d;
         }
     }
 </style>
