@@ -1,14 +1,15 @@
 <script>
+  import Header from './components/Header.vue';
   export default{
+    components:{
+      Header
+    }
 
   }
 </script>
 
 <template>
-  <h1>
-    Yu-gi-oh
-  </h1>
-
+  <Header></Header>
 </template>
 
 <style lang="scss">
