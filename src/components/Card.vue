@@ -35,11 +35,12 @@
       color: white;
       text-transform: uppercase;
       font-size: 17px;
+      font-weight: 400;
     }
 
     .archetype{
       font-style: italic;
-      font-size: 18px;
+      font-weight: 300;
     }
   }
 </style>
