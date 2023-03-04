@@ -13,6 +13,11 @@
                 store
             }
         },
+        computed:{
+            cards(){
+                return this.store.cards
+            }
+        },
         methods:{
             createCards(){
                 axios
@@ -32,7 +37,7 @@
 
 <template>
     <ul class="container album-cards">
-        <card v-for="card in store.cards" :key="card.id" :card="card" class="card-el"></Card>
+        <card v-for="card in cards" :key="card.id" :card="card" class="card-el"></Card>
     </ul>
 </template>
 
