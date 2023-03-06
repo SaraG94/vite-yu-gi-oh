@@ -8,8 +8,7 @@
     export default{
         components:{
             Filter,
-            Card,
-           
+            Card, 
         },
         data(){
             return{
@@ -23,6 +22,9 @@
         },
         methods:{
             createCards(){
+                const search=this.store.search
+                console.log(search,'=valore search')
+
                 axios
                     .get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0')
                     .then((res)=>{
@@ -31,7 +33,8 @@
                     })
             },
             searchCards(){
-                console.log('cerca cards')
+                console.log('cerca cards');
+                this.createCards() //ogni volta che cambia il contenuto della search leggo il valore nello store
             }
         },
         created(){
