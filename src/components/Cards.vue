@@ -29,6 +29,9 @@
                         console.log(res.data.data);
                         this.store.cards = res.data.data
                     })
+            },
+            searchCards(){
+                console.log('cerca cards')
             }
         },
         created(){
@@ -39,7 +42,7 @@
 </script>
 
 <template>
-    <Filter></Filter>
+    <Filter @onSearch="searchCards"></Filter>
     <ul class="container album-cards">
         <card v-for="card in cards" :key="card.id" :card="card" class="card-el"></Card>
     </ul>

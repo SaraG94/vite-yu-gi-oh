@@ -12,7 +12,10 @@
 
 <template>
     <div class="container">
-        <input class="search-bar" type="text" placeholder="Nome della carta" v-model="store.search">
+        <input class="search-bar"
+        type="text" placeholder="Nome della carta"
+        v-model="store.search" 
+        @change="$emit('onSearch')">
     </div>
 </template>
 
