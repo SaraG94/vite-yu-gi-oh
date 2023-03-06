@@ -23,14 +23,15 @@
         methods:{
             createCards(){
                 const search=this.store.search
-                console.log(search,'=valore search')
+                const numbSelect =this.store.number
+                console.log(search,'=valore search',numbSelect, 'numero carte')
 
                 axios
                     //.get(`https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0&fname=${search}`) prima soluzione
                     .get('https://db.ygoprodeck.com/api/v7/cardinfo.php',{
                         params:{
                             fname:search,
-                            num:20,
+                            num:numbSelect,
                             offset:0
                         }
                     })
@@ -46,7 +47,7 @@
             },
             searchCards(){
                 console.log('cerca cards');
-                this.createCards() //ogni volta che cambia il contenuto della search leggo il valore nello store
+                this.createCards() //ogni volta che cambia il contenuto della search e della select leggo il valore nello store e uso la funzione
             }
         },
         created(){

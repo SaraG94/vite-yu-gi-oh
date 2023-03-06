@@ -2,7 +2,8 @@ import { reactive } from "vue";
 
 const store= reactive({
     cards:[],
-    search:''
+    search:'',
+    number: 20,
 })
 
 export default store
