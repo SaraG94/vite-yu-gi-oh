@@ -26,7 +26,14 @@
                 console.log(search,'=valore search')
 
                 axios
-                    .get('https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0')
+                    //.get(`https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0&fname=${search}`) prima soluzione
+                    .get('https://db.ygoprodeck.com/api/v7/cardinfo.php',{
+                        params:{
+                            fname:search,
+                            num:20,
+                            offset:0
+                        }
+                    })
                     .then((res)=>{
                         console.log(res.data.data);
                         this.store.cards = res.data.data
