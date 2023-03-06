@@ -36,6 +36,10 @@
 </script>
 
 <template>
+    <div class="container">
+        <input class="search-bar" type="text" placeholder="Nome della carta">
+    </div>
+
     <ul class="container album-cards">
         <card v-for="card in cards" :key="card.id" :card="card" class="card-el"></Card>
     </ul>
@@ -43,6 +47,13 @@
 
 <style lang="scss" scoped>
  @use '../style/partials/variables' as *;
+
+    .search-bar{
+        margin-top: 25px;
+        padding: 5px 10px;
+        font-size: 15px;
+        border-radius: 10px;
+    }
     .album-cards{
         display: grid;
         grid-template-columns: repeat(5, 1fr);

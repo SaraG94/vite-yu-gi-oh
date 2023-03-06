@@ -20,7 +20,7 @@
         <div class="container">
             <p class="elements">
                 <span class="numb-el">{{ cards.length }}</span>
-                cards of..
+                cards
             </p>
         </div>
     </footer>
