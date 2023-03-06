@@ -38,6 +38,11 @@
                         console.log(res.data.data);
                         this.store.cards = res.data.data
                     })
+                    .catch((error)=>{
+                        console.log(error);
+                        this.store.cards=[]
+                        this.store.search=''
+                    })
             },
             searchCards(){
                 console.log('cerca cards');
