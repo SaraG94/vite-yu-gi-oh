@@ -17,10 +17,8 @@
 <style lang="scss" scoped>
 
     main{
-        background-image: url('https://www.teahub.io/photos/full/229-2290417_background-yu-gi-oh.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top,center;
+        background-image: url(https://img.freepik.com/premium-vector/ancient-egypt-egyptian-hieroglyphs-seamless-pattern-antique-elements-symbols-papyrus-historical-traditional-background-pyramids-graphic-decor-textile-wrapping-paper-wallpaper-vector-texture_176411-2756.jpg);
+        background-repeat: repeat; 
+        background-size: contain;
     }
-
 </style>
